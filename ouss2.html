@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>oussTravel</title>
+    <link rel="stylesheet" href="css/ouss.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;0,800;1,200;1,300;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Cairo:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- start header -->
+    <div class="header" id="header">
+        <div class="container">
+            <img class="logo" src="gallerie/LogoSample_ByTailorBrands.jpg" alt="">
+            <ul class="main-nav">
+
+                <li><a href="ouss1.html">HOME</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <!--end header  -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>adventure is worthwhile</h3>
+
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+
+    </div>
+    <!-- home section ends -->
+
+    <!-- Start Discount -->
+    <div class="container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>Contact Us</h2>
+                <form action="">
+                    <input type="text" class="field" placeholder="Your Name">
+                    <input type="text" class="field" placeholder="Your Email">
+                    <input type="text" class="field" placeholder="Phone">
+                    <textarea placeholder="Message" class="field"></textarea>
+                    <button class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Discount -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="box">
+                <h6>oussematravel</h6>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p id="Contact" class="text">
+                    Nous avons enfin créé le site pour partager avec vous tous les bons plans du moment.
+                </p>
+            </div>
+            <div class="box">
+                <ul class="links">
+                    <li><a href="#">Important Link 1</a></li>
+                    <li><a href="#">Important Link 2</a></li>
+                    <li><a href="#">Important Link 3</a></li>
+                    <li><a href="#">Important Link 4</a></li>
+                    <li><a href="#">Important Link 5</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="line">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <div class="info">sfax, tunisie, Inside palmarium rue 14 janvier</div>
+                </div>
+                <div class="line">
+                    <i class="far fa-clock fa-fw"></i>
+                    <div class="info">Business Hours: From 10:00 To 18:00</div>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone-volume fa-fw"></i>
+                    <div class="info">
+                        <span>+21698456765</span>
+                        <span>+21654234876</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box footer-gallery">
+            <img src="gallerie/heart.png" alt="" />
+        </div>
+        <p class="copyright">Made With love By oussema</p>
+    </div>
+    <!-- End Footer -->
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        body {
+            height: 100vh;
+            width: 100%;
+        }
+        
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 100px;
+        }
+        
+        .container:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: url("bg.jpg") no-repeat center;
+            background-size: cover;
+            filter: blur(50px);
+            z-index: -1;
+        }
+        
+        .contact-box {
+            max-width: 850px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+        }
+        
+        .left {
+            background: url("bg.jpg") no-repeat center;
+            background-size: cover;
+            height: 100%;
+        }
+        
+        .right {
+            padding: 25px 40px;
+        }
+        
+        h2 {
+            position: relative;
+            padding: 0 0 10px;
+            margin-bottom: 10px;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 50px;
+            border-radius: 2px;
+            background-color: #1086ca;
+        }
+        
+        .field {
+            width: 100%;
+            border: 2px solid rgba(0, 0, 0, 0);
+            outline: none;
+            background-color: rgba(230, 230, 230, 0.6);
+            padding: 0.5rem 1rem;
+            font-size: 1.1rem;
+            margin-bottom: 22px;
+            transition: .3s;
+        }
+        
+        .field:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        
+        textarea {
+            min-height: 150px;
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 0.5rem 1rem;
+            background-color: #1086ca;
+            color: #fff;
+            font-size: 1.1rem;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: .3s;
+        }
+        
+        .btn:hover {
+            background-color: #e8eef0;
+        }
+        
+        .field:focus {
+            border: 2px solid rgba(30, 85, 250, 0.47);
+            background-color: #fff;
+        }
+        
+        @media screen and (max-width: 880px) {
+            .contact-box {
+                grid-template-columns: 1fr;
+            }
+            .left {
+                height: 200px;
+            }
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+         :root {
+            --orange: #ffa500;
+        }
+        
+        * {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            transition: all .2s linear;
+        }
+        
+        *::selection {
+            background: var(--orange);
+            color: #fff;
+        }
+        
+        .home {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
+            position: relative;
+            z-index: 0;
+        }
+        
+        .home .content {
+            text-align: center;
+        }
+        
+        .home .content h3 {
+            font-size: 4.5rem;
+            color: rgb(252, 236, 236);
+            text-transform: uppercase;
+            position: relative;
+            top: 0%;
+        }
+        
+        .home .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            height: 700px;
+            width: 1519.5px;
+            background-size: cover;
+            object-fit: cover;
+        }
+        
+        .home .controls {
+            padding: 1rem;
+            border-radius: 5rem;
+            background: rgba(0, 0, 0, .7);
+            position: relative;
+            top: 10rem;
+            left: 50%;
+        }
+        
+        .home .controls .vid-btn {
+            height: 2rem;
+            width: 2rem;
+            display: inline-block;
+            border-radius: 50%;
+            background: #fff;
+            cursor: pointer;
+            margin: 0 .5rem;
+        }
+        
+        .home .controls .vid-btn.active {
+            background: var(--orange);
+        }
+    </style>
+    <script>
+        let videoBtn = document.querySelectorAll('.vid-btn');
+        videoBtn.forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.controls .active').classList.remove('active');
+                btn.classList.add('active');
+                let src = btn.getAttribute('data-src');
+                document.querySelector('#video-slider').src = src;
+            });
+        });
+    </script>
+</body>
+
+</html>

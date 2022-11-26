@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>oussTravel</title>
+    <link rel="stylesheet" href="css/ouss.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;0,800;1,200;1,300;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Cairo:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- start header -->
+    <div class="header" id="header">
+        <div class="container">
+            <img class="logo" src="gallerie/LogoSample_ByTailorBrands.jpg" alt="">
+            <ul class="main-nav">
+
+                <li><a href="ouss1.html">HOME</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Start Landing -->
+    <div class="lan">
+        <div class="container">
+            <div class="text">
+                <h1>Welcome, To OUSSTRAVEL</h1>
+                <p> Nous avons enfin créé le site pour partager avec vous tous les bons plans du moment.</p>
+            </div>
+            <div class="image">
+                <img src="honeymoon.png" alt="" />
+            </div>
+        </div>
+        <a href="#articles" class="go-down">
+            <i class="fas fa-angle-double-down fa-2x"></i>
+        </a>
+    </div>
+    <!-- End Landing -->
+
+
+
+
+
+    <!-- Start Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="box">
+                <h6>oussematravel</h6>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p id="Contact" class="text">
+                    Nous avons enfin créé le site pour partager avec vous tous les bons plans du moment.
+                </p>
+            </div>
+            <div class="box">
+                <ul class="links">
+                    <li><a href="#">Important Link 1</a></li>
+                    <li><a href="#">Important Link 2</a></li>
+                    <li><a href="#">Important Link 3</a></li>
+                    <li><a href="#">Important Link 4</a></li>
+                    <li><a href="#">Important Link 5</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="line">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <div class="info">sfax, tunisie, Inside palmarium rue 14 janvier</div>
+                </div>
+                <div class="line">
+                    <i class="far fa-clock fa-fw"></i>
+                    <div class="info">Business Hours: From 10:00 To 18:00</div>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone-volume fa-fw"></i>
+                    <div class="info">
+                        <span>+21698456765</span>
+                        <span>+21654234876</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box footer-gallery">
+            <img src="gallerie/heart.png" alt="" />
+        </div>
+        <p class="copyright">Made With love By oussema</p>
+    </div>
+    <!-- End Footer -->
+
+
+    <style>
+        .lan {
+            position: relative;
+        }
+        
+        .lan::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -40px;
+            width: 100%;
+            height: 100%;
+            background-color: #ececec;
+            z-index: -1;
+            transform: skewY(-6deg);
+            transform-origin: top left;
+        }
+        
+        .lan .container {
+            min-height: calc(100vh - 72px);
+            display: flex;
+            align-items: center;
+            padding-bottom: 120px;
+        }
+        
+        .lan .text {
+            flex: 1;
+        }
+        
+        @media (max-width: 991px) {
+            .lan .text {
+                text-align: center;
+            }
+        }
+        
+        .lan .text h1 {
+            font-size: 40px;
+            margin: 0;
+            letter-spacing: -2px;
+        }
+        
+        @media (max-width: 767px) {
+            .lan .text h1 {
+                font-size: 28px;
+            }
+        }
+        
+        .lan .text p {
+            font-size: 23px;
+            line-height: 1.7;
+            margin: 5px 0 0;
+            color: #370875;
+            max-width: 500px;
+        }
+        
+        @media (max-width: 991px) {
+            .lan .text p {
+                margin: 10px auto;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .lan .text p {
+                font-size: 18px;
+            }
+        }
+        
+        .lan .image img {
+            position: relative;
+            width: 333px;
+            animation: up-and-down 5s linear infinite;
+        }
+        
+        @media (max-width: 991px) {
+            .lan .image {
+                display: none;
+            }
+        }
+        
+        .lan .go-down {
+            color: var(--main-color);
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: var(--main-transition);
+        }
+        
+        .lan .go-down:hover {
+            color: var(--main-color-alt);
+        }
+        
+        .lan .go-down i {
+            animation: bouncing 1.5s infinite;
+        }
